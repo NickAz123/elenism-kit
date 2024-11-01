@@ -1,0 +1,8 @@
+node_modules
+components
+js
+tailwind.config.js
+webpack.config.js
+postcss.config.js
+.babelrc
+index.js
