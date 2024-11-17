@@ -6,7 +6,7 @@ let firebaseApp = null;
 let firestore = null;
 let auth = null;
 
-export const fireBaseInit = (config) => {
+export const firebaseInit = (config) => {
   if (!firebaseApp) {
     firebaseApp = initializeApp(config);
     firestore = getFirestore(firebaseApp);
@@ -15,11 +15,12 @@ export const fireBaseInit = (config) => {
   return { firebaseApp, firestore, auth };
 };
 
+//Exposes firebase app, may remove.
 export const getFirebaseApp = () => {
   if (!firebaseApp) {
-    throw new Error(
-      "Firebase is not initialized. Call initializeFirebase first."
-    );
+    throw new Error("Firebase is not initialized.");
+  } else {
+    console.log("Firebase successfully initialized.");
   }
   return firebaseApp;
 };
