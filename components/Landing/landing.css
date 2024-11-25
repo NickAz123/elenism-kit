@@ -9,11 +9,12 @@
   align-items: center;
   justify-content: center;
   height: 800px;
-  /* max-height: 900px; */
+  /* max-height: 900px;  */
   overflow: hidden;
-  /* background-size: cover;
-  background-position: center; */
+  /* background-size: cover; */
+  /* background-position: center;  */
 }
+ 
 
 #background-photo {
   position: absolute;
