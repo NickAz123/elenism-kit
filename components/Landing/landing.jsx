@@ -1,5 +1,5 @@
-import './landing.css';
 import React from 'react';
+import './landing.css';
 
 function Landing({bgClass, bgImg, logoClass, logoURL, titleClass, brideName, groomName}) {
   return (
