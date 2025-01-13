@@ -4,7 +4,7 @@ import './schedule.css';
 function Schedule({scheduleItems, date}) {
   return (
     <>
-      <div id="schedule">
+        <div id="schedule">
         <div className="transition-container"><img className="transition" alt="" /></div>
         <h2><span>Dia del</span><br></br>EVENTO</h2>
         {date && <p><span>{date}</span></p>}
