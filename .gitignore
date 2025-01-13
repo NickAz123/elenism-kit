@@ -6,3 +6,5 @@ webpack.config.js
 postcss.config.js
 .babelrc
 index.js
+
+testing-app/.env
