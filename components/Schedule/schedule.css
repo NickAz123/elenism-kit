@@ -1,0 +1,228 @@
+#invitation {
+  position: relative;
+  display: grid;
+  top: -2px;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: bottom;
+  transform: rotate(180deg);
+  text-align: center;
+  color: black;
+  z-index: -1;
+}
+
+#invitation h2 {
+  font-size: 1.5em;
+  width: unset;
+}
+
+.information {
+  transform: rotate(180deg);
+  display: grid;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30%;
+  margin-top: 50%;
+  justify-self: center;
+}
+.ceremony {
+  display: grid;
+  /* align-self: center; */
+  justify-self: center;
+  height: max-content;
+  width: 80%;
+}
+
+.ceremony > *, .venue > * {
+  margin: 10px;
+  width: unset;
+}
+
+.ReactModal__Content--after-open .rsvp-modal-body{ 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 425px;
+  padding: 15px;
+  height: max-content;
+  max-height: 800px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--pale-bg);
+  text-align: center;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.rsvp-modal-body  * {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+}
+
+.ReactModal__Content--after-open .rsvp-title {
+  font-family: "Playfair", serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: var(--sec-dark);
+}
+#rsvp-search-name, #rsvp-search-number{
+  color: black;
+  width: 140%;
+  justify-self: center;
+  align-self: center;
+  border: solid 1px var(--sec);
+  border-radius: 4px;
+  height: 35px;
+  margin: 5px;
+}
+
+
+.ReactModal__Content--after-open .rsvp-name {
+  font-family: "Tangerine", cursive;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: black;
+}
+.rsvp-caption {
+  display: flex;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  color: var(--sec-dark)
+}
+.ReactModal__Content--after-open #rsvp-msg {
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  border: solid 1px var(--sec);
+  border-radius: 4px;
+  height: 35px;
+  margin: 0px 5px 5px 5px;
+  color: var(--sec-dark);
+}
+.ReactModal__Content--after-open .rsvp-btn {
+  position: relative;
+  display: flex;
+  font-size: 15px;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-around;
+}
+#populateForm {
+  display: grid;
+  max-width: 400px;
+  justify-content: center;
+  align-content: center;
+  color: var(--sec-dark);
+}
+.rsvp-btn .button {
+  position: relative;
+  width: 45%;
+  font-size: 14px;
+  z-index: 5;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.rsvp-phone {
+  align-self: center;
+  font-size: 0.95em;
+  width: 100%;
+}
+.rsvp-info {
+  width: 25%;
+  text-align: left;
+  justify-self: center;
+}
+
+#rsvp-seats {
+  border: solid 1px var(--sec);
+  border-radius: 4px;
+  width: 30px;
+  height: 25px;
+  margin: 0px 5px 0px 10px;
+  text-align: center;
+  color: var(--sec-dark);
+}
+
+.happy {
+  color: darkgreen;
+}
+.sad {
+  color: brown;
+}
+
+.venue {
+  display: grid;
+  justify-self: center;
+  height: max-content;
+  width: 100%;
+}
+
+.venue div {
+  display: flex;
+  height: 20px;
+}
+
+.venue div a{
+  justify-self: center;
+  margin: 5px;
+  width: 45%;
+}
+
+#schedule .transition {
+  top: -16%;
+}
+
+#schedule {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  text-align: center;
+  color: black;
+  z-index: 10;
+}
+
+#schedule h2 {
+  margin-top: 15%;
+  font-size: 3em;
+}
+#schedule h2 span{
+  font-family: "Tangerine", cursive;
+}
+#schedule-all-events {
+  width: 70vw;
+  max-width: 300px;
+  height: max-content;
+  list-style-type: none;
+}
+.schedule-event {
+  margin-top: 10%;
+  font-size: 1.1em;
+  text-align: left;
+  height: max-content;
+  display: flex;
+}
+.schedule-event {
+  justify-content: center;
+  align-items: center;
+}
+.schedule-event img {
+  max-width: 50px;
+  margin-right: 10px;
+}

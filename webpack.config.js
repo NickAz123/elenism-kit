@@ -33,9 +33,9 @@ module.exports = {
       {
         test: /\.css$/, // Handle CSS files
         use: [
+          "style-loader",
           "css-loader", // Interpret @import and url() like import/require()
           "postcss-loader", // Process CSS with PostCSS
-          "style-loader",
         ],
       },
     ],
