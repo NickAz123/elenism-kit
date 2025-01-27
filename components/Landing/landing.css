@@ -1,21 +1,17 @@
-#landing-name > * {
-  font-family: "Allison", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 #landing-page {
   display: grid;
   align-items: center;
   justify-content: center;
   height: 800px;
+  width: 100vw;
   /* max-height: 900px;  */
   overflow: hidden;
   /* background-size: cover; */
   /* background-position: center;  */
+  z-index: 1;
 }
 
-#background-photo {
+.background-photo {
   position: absolute;
   object-fit: cover;
   filter: brightness(100%);
@@ -24,21 +20,36 @@
   width: 100%;
   justify-self: center;
   top: 0%;
-  z-index: -1;
+  z-index: 0;
 }
-#logo {
+
+.landing-logo {
   position: relative;
-  filter: brightness(50%);
+  filter: brightness(0%) invert(1);
   max-width: 40%;
   justify-self: center;
-  top: -50px;
+}
+
+.landing-name > * {
+  position: relative;
+  font-family: "Allison", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  z-index: 2;
+  font-size: xx-large;
+  text-align: center;
 }
 
 .landing-title {
   background-color: rgba(56,38,14, 0.5);
   background-blend-mode: lighten;
   padding: 20px 0 20px 0;
+  width: inherit;
+  text-align: center;
+  z-index: 1;
 }
+
 .landing-title-1{
   font-family: "Cormorant SC", serif;
   font-weight: 500;
@@ -51,13 +62,16 @@
   padding: 0;
   opacity: 80%;
 }
+
 .landing-title span {
   font-size: 40px;
   font-weight: 300;
 }
+
 .landing-title-2 {
   font-size: 40px;
 }
+
 .landing-title .landing-title-n {
   font-family: "Montaga", serif;
   font-weight: 400;
