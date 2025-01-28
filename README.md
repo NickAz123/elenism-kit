@@ -21,6 +21,7 @@ On a _separate project_, you can use ```npm link elenism-kit``` to install the p
 Navigate to the internal _testing-app_ and run ```npm install``` to install dependencies. _firebase_ will need to be installe as well.
 
 In the _src_ folder, run the following command for both the component and js level folders outside the project file.
+
 ```ln -s ../../components components```
 
 ```ln -s ../../js js```
