@@ -11,9 +11,22 @@ If you are planning to create additional components for the package, do so by cr
 
 Afterwords, compile the package using ```npm run build```
 
-Then use ```npm link``` to deploy the package locally to test
+## How to test package using a local React App
+### Simulating the NPM link
+On the _elenism-kit_ project, use ```npm link``` to deploy the package locally to test
 
 On a _separate project_, you can use ```npm link elenism-kit``` to install the package from local. This is how you can test your exported components.
+
+### Using an internal testing App and Symlinks
+Navigate to the internal _testing-app_ and run ```npm install``` to install dependencies. _firebase_ will need to be installe as well.
+
+In the _src_ folder, run the following command for both the component and js level folders outside the project file.
+```ln -s ../../components components```
+```ln -s ../../js js```
+
+These will create SYM-LINKS within the internal _testing-app_, allowing you to use components and functions from outside the applications folder.
+
+You should now be able to use and import the components into _app.js_
 
 ## DEPENDECIES LIST
 
