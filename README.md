@@ -18,8 +18,6 @@ On a _separate project_, you can use ```npm link elenism-kit``` to install the p
 ## DEPENDECIES LIST
 
 # Dependencies included
-Axios 1.7.7
-
 Firebase 11.0.1
 
 # Developer Dependencies
