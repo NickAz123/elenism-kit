@@ -22,6 +22,7 @@ Navigate to the internal _testing-app_ and run ```npm install``` to install depe
 
 In the _src_ folder, run the following command for both the component and js level folders outside the project file.
 ```ln -s ../../components components```
+
 ```ln -s ../../js js```
 
 These will create SYM-LINKS within the internal _testing-app_, allowing you to use components and functions from outside the applications folder.
